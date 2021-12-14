@@ -1,7 +1,15 @@
 <template>
-  
+	<Navbar />
 	<router-view />
 </template>
+
+<script>
+export default {
+	components: {
+		Navbar: require("@/components/Navbar.vue").default,
+	},
+};
+</script>
 
 <style>
 body {

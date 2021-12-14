@@ -3,11 +3,17 @@
 		<div class="actions">
 			<h3 @click="showDetails = !showDetails">{{ project.title }}</h3>
 			<div class="icons">
-				<span class="material-icons">edit</span>
+				<router-link
+					:to="{ name: 'EditProject', params: { id: project.id } }"
+				>
+					<span class="material-icons">edit</span>
+				</router-link>
 				<span @click="deleteProject" class="material-icons"
 					>delete</span
 				>
-				<span @click="toggleComplete" class="material-icons tick">done</span>
+				<span @click="toggleComplete" class="material-icons tick"
+					>done</span
+				>
 			</div>
 		</div>
 		<div v-if="showDetails" class="details">
@@ -77,6 +83,6 @@ h3 {
 }
 
 .project.complete .tick {
-    color: #00ce89
+	color: #00ce89;
 }
 </style>

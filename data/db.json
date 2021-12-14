@@ -8,9 +8,9 @@
     },
     {
       "id": 2,
-      "title": "Marketing banner",
-      "details": "Lorem ipsum",
-      "complete": false
+      "title": "Marketing banner for a better life",
+      "details": "Lorem ipsumLorem ipsumLorem ipsumLorem ipsum",
+      "complete": true
     }
   ]
 }
